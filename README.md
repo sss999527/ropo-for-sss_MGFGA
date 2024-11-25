@@ -6,3 +6,73 @@ Traditional unsupervised multi-source domain adaptation usually assumes that all
 
 ## Method
 ![F1](https://github.com/sss999527/ropo-for-sss_MGFGA/blob/main/img/F1.pdf)
+
+## Setup
+### Install Package Dependencies
+
+```
+Python Environment: >= 3.6
+torch >= 1.2.0
+torchvision >= 0.4.0
+tensorbard >= 2.0.0
+numpy
+yaml
+```
+
+### Install Datasets
+We need users to download the DigitFive, Office-Caltech, Office31, DomainNet, or MiniDomainNet, and Office-Home datasets for the MSFDA experiments. They should declare a base path to store the datasets with the following directory structure:
+
+```
+base_path
+│       
+└───dataset
+│   │   DigitFive
+│       │   mnist_data.mat
+│       │   mnistm_with_label.mat
+|       |   svhn_test_32x32.mat
+|       |   svhn_train_32x32.mat  
+│       │   ...
+│   │   DomainNet
+│       │   Clipart
+│       │   Infograph
+│       │   ...
+│   │   MiniDomainNet
+│       │   ...
+│   │   OfficeCaltech10
+│       │   ...
+|   |   Office31
+|       |   ...
+└───trained_model
+│   │	parmater
+│   │	runs
+...
+```
+
+Note that the `dataset` folder is different from the `datasets` folder, one for the dataset and the other for the network model.
+
+### Unsupervised Multi-source-free Domain Adaptation
+The configuration files are located in the `./config` directory, where you will find four `.yaml`-formatted config files. To execute unsupervised multi-source decentralized domain adaptation on a particular dataset, such as painting in DomainNet, utilize the following commands.
+
+```
+python main.py --config MiniDomainNet.yaml --target-domain painting -bp "$(pwd)"
+```
+You can download the dataset from [DomainNet](https://ai.bu.edu/M3SDA/).
+
+The training parameters of some datasets can be downloaded from Baidu Netdisk:
+https://pan.baidu.com/s/1wgzt6fGnqlkjJIv-Jn5MAg?pwd=3why
+
+The training results for four main datasets are as follows:
+  * Results on DigitFive and Digit-5 dataset.
+![T1](https://github.com/sss999527/ropo-for-BC_MDA/blob/main/images/T1.png)
+  * Results on Office-Home and Office-Caltech dataset.
+![T2,3](https://github.com/sss999527/ropo-for-BC_MDA/blob/main/images/F2_3.png)
+  * Results on DomainNet dataset.
+![T4](https://github.com/sss999527/ropo-for-BC_MDA/blob/main/images/T4.png)
+
+
+
+
+
+
+
+
