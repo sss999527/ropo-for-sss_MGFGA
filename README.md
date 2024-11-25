@@ -71,14 +71,13 @@ The training results for four main datasets are as follows:
 The following four figures show the t-SNE feature visualization results before and after domain adaptation of the model on MNIST and MNIST-M datasets in turn, where figures 1, 3 show the results before domain adaptation and figures 2, 4 show the results after domain adaptation.
 
   * t-SNE Feature Visualization result on MNIST.
-![F5](https://github.com/sss999527/ropo-for-sss_MGFGA/blob/main/images/F5.png)
-![F6](https://github.com/sss999527/ropo-for-sss_MGFGA/blob/main/images/F6.png)
+![F5](https://github.com/sss999527/ropo-for-sss_MGFGA/blob/main/images/F9.png)
   * t-SNE Feature Visualization result on MNIST-M.
-![F7](https://github.com/sss999527/ropo-for-sss_MGFGA/blob/main/images/F7.png)
-![F8](https://github.com/sss999527/ropo-for-sss_MGFGA/blob/main/images/F8.png)
+![F7](https://github.com/sss999527/ropo-for-sss_MGFGA/blob/main/images/F10.png)
 
 
-
+## Miscellaneous
+We can't put all the code into the repository at the moment as the article is not yet confirmed for acceptance, and we will update the detailed code once the paper is accepted.
 
 
 
