@@ -50,7 +50,7 @@ base_path
 
 Note that the `dataset` folder is different from the `datasets` folder, one for the dataset and the other for the network model.
 
-### Unsupervised Multi-source-free Domain Adaptation
+## Federated Domain Adaptation
 The configuration files are located in the `./config` directory, where you will find four `.yaml`-formatted config files. To execute unsupervised multi-source decentralized domain adaptation on a particular dataset, such as painting in DomainNet, utilize the following commands.
 
 ```
@@ -62,13 +62,20 @@ The training parameters of some datasets can be downloaded from Baidu Netdisk:
 https://pan.baidu.com/s/1wgzt6fGnqlkjJIv-Jn5MAg?pwd=3why
 
 The training results for four main datasets are as follows:
-  * Results on DigitFive and Digit-5 dataset.
-![T1](https://github.com/sss999527/ropo-for-BC_MDA/blob/main/images/T1.png)
-  * Results on Office-Home and Office-Caltech dataset.
-![T2,3](https://github.com/sss999527/ropo-for-BC_MDA/blob/main/images/F2_3.png)
-  * Results on DomainNet dataset.
-![T4](https://github.com/sss999527/ropo-for-BC_MDA/blob/main/images/T4.png)
+  * Results on Office-Caltech10, Digit-5 dataset and DomainNet.
+![T1](https://github.com/sss999527/ropo-for-sss_MGFGA/blob/main/images/t1.png)
+  * Results on Office-Home dataset.
+![T2](https://github.com/sss999527/ropo-for-sss_MGFGA/blob/main/images/t2.png)
 
+### t-SNE Feature Visualization
+The following four figures show the t-SNE feature visualization results before and after domain adaptation of the model on MNIST and MNIST-M datasets in turn, where figures 1, 3 show the results before domain adaptation and figures 2, 4 show the results after domain adaptation.
+
+  * t-SNE Feature Visualization result on MNIST.
+![F5](https://github.com/sss999527/ropo-for-sss_MGFGA/blob/main/images/F5.png)
+![F6](https://github.com/sss999527/ropo-for-sss_MGFGA/blob/main/images/F6.png)
+  * t-SNE Feature Visualization result on MNIST-M.
+![F7](https://github.com/sss999527/ropo-for-sss_MGFGA/blob/main/images/F7.png)
+![F8](https://github.com/sss999527/ropo-for-sss_MGFGA/blob/main/images/F8.png)
 
 
 
